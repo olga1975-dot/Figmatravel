@@ -9,6 +9,8 @@ export default function App() {
   };
 
   return (
+    <div className="bg-red-500 text-white p-10 text-3xl">
+  TAILWIND WORKS
     <div className="min-h-screen bg-gradient-to-b from-background via-background to-[#0f1420]">
       {/* Hero Section */}
       <header className="relative overflow-hidden">
