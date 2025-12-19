@@ -1,3 +1,6 @@
+<h1 className="text-6xl text-red-500 font-bold">
+  Tailwind ЖИВОЙ
+</h1>
 export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 text-white">
