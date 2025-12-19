@@ -1,26 +1,40 @@
+{/* ДЛЯ КОГО КУРС */}
+<section className="w-full bg-white py-24">
+  <div className="max-w-5xl mx-auto px-6">
+    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+      Для кого этот курс
+    </h2>
 
-               
-        export default function App() {
-  return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 text-slate-900">
-      {/* Hero Section */}
-      <section className="pt-16 pb-32">
-        <div className="max-w-4xl mx-auto text-center px-6">
-          <p className="uppercase tracking-widest text-sm text-slate-500 mb-4">
-            название курса
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Английский для ПУТЕШЕСТВИЙ
-          </h1>
-          <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-            Стартовать до поездки в чемодана – уверенный разговорный английский
-            для реальных ситуаций.
-          </p>
-          <button className="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-lg font-semibold shadow-lg hover:shadow-xl transition-shadow">
-            Записаться на курс
-          </button>
-        </div>
-      </section>
-    </main>
-  );
-} 
+    <div className="grid md:grid-cols-2 gap-8">
+      
+      <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm hover:shadow-lg transition">
+        <h3 className="text-xl font-bold mb-2">
+          👶 Первая группа
+        </h3>
+        <p className="text-slate-600 mb-4">
+          4–5 класс
+        </p>
+        <ul className="list-disc list-inside text-slate-600 space-y-2">
+          <li>Базовый словарный запас</li>
+          <li>Простые диалоги</li>
+          <li>Игровой формат</li>
+        </ul>
+      </div>
+
+      <div className="rounded-3xl border border-indigo-200 bg-indigo-50 p-8 shadow-sm hover:shadow-lg transition">
+        <h3 className="text-xl font-bold mb-2">
+          🧑 Вторая группа
+        </h3>
+        <p className="text-slate-600 mb-4">
+          6–8 класс
+        </p>
+        <ul className="list-disc list-inside text-slate-600 space-y-2">
+          <li>Разговорная практика</li>
+          <li>Ситуации из реальных поездок</li>
+          <li>Уверенность в общении</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
