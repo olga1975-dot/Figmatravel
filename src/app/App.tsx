@@ -1,27 +1,24 @@
 export default function App() {
   return (
-    <main className="min-h-screen bg-[#F7F8FC] text-[#1C1C1C]">
+    <main className="min-h-screen bg-slate-50 flex flex-col items-center justify-center px-6 text-center">
       
-      {/* HERO */}
-      <section className="max-w-[960px] mx-auto px-6 pt-24 pb-20 text-center">
-        <p className="text-sm uppercase tracking-wide text-gray-500 mb-4">
-          Курс английского языка
-        </p>
+      <span className="text-sm tracking-widest uppercase text-slate-500 mb-4">
+        Курс английского языка
+      </span>
 
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          Английский для путешествий
-        </h1>
+      <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
+        Английский для путешествий
+      </h1>
 
-        <p className="text-lg text-gray-600 max-w-[720px] mx-auto mb-10">
-          Мечтаете свободно общаться за границей — от заказа кофе
-          до поиска утраченного чемодана? Этот курс научит реальному
-          разговорному английскому для поездок и путешествий.
-        </p>
+      <p className="max-w-2xl text-lg text-slate-600 mb-8">
+        Мечтаете свободно общаться за границей — от заказа кофе до поиска
+        утраченного чемодана? Этот курс научит реальному разговорному
+        английскому для поездок и путешествий.
+      </p>
 
-        <button className="px-8 py-4 rounded-xl bg-blue-600 text-white text-lg font-medium hover:bg-blue-700 transition">
-          Записаться на курс
-        </button>
-      </section>
+      <button className="px-6 py-3 rounded-md border border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white transition">
+        Записаться на курс
+      </button>
 
     </main>
   );
