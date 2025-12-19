@@ -1,6 +1,6 @@
 export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0b132b] via-[#0f1c3f] to-[#020617] text-slate-100">
+    <div className="min-h-screen">
       
       {/* HERO */}
       <section className="flex flex-col items-center justify-center text-center px-6 py-32">
