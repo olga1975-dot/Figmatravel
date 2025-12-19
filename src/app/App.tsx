@@ -16,7 +16,10 @@ export default function App() {
           английскому для поездок и путешествий.
         </p>
 
-        <button className="px-8 py-4 rounded-xl bg-blue-600 text-white text-lg font-semibold hover:bg-blue-700 transition">
+        <button className="px-10 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xl font-bold shadow-lg hover:scale-105 transition">
+  Записаться на курс
+</button>
+
           Записаться на курс
         </button>
       </div>
