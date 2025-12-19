@@ -6,42 +6,25 @@ export default {
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
       colors: {
-        background: "hsl(222 47% 11%)",
-        foreground: "hsl(210 40% 98%)",
+        background: "#0a1020",
+        foreground: "#e5e7eb",
 
-        card: "hsl(222 47% 15%)",
-        "card-foreground": "hsl(210 40% 98%)",
+        card: "#111827",
+        border: "#1f2937",
 
-        primary: "hsl(160 84% 39%)",
-        "primary-foreground": "hsl(222 47% 11%)",
+        primary: "#34d399",
+        secondary: "#38bdf8",
+        accent: "#a78bfa",
 
-        secondary: "hsl(199 89% 48%)",
-        "secondary-foreground": "hsl(210 40% 98%)",
-
-        accent: "hsl(280 80% 60%)",
-        "accent-foreground": "hsl(210 40% 98%)",
-
-        muted: "hsl(222 47% 20%)",
-        "muted-foreground": "hsl(215 20% 65%)",
-
-        border: "hsl(222 47% 25%)",
+        muted: "#9ca3af",
       },
       borderRadius: {
-        lg: "1rem",
-        xl: "1.25rem",
+        xl: "1rem",
         "2xl": "1.5rem",
       },
     },
   },
   plugins: [],
-}
-
+};
