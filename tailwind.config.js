@@ -1,45 +1,47 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: ['class'],
+  darkMode: ["class"],
   content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
+    "./index.html",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
     container: {
       center: true,
-      padding: '1rem',
+      padding: "2rem",
       screens: {
-        '2xl': '1280px',
+        "2xl": "1400px",
       },
     },
     extend: {
       colors: {
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
+        background: "hsl(222 47% 11%)",
+        foreground: "hsl(210 40% 98%)",
 
-        card: 'hsl(var(--card))',
-        'card-foreground': 'hsl(var(--card-foreground))',
+        card: "hsl(222 47% 15%)",
+        "card-foreground": "hsl(210 40% 98%)",
 
-        muted: 'hsl(var(--muted))',
-        'muted-foreground': 'hsl(var(--muted-foreground))',
+        primary: "hsl(160 84% 39%)",
+        "primary-foreground": "hsl(222 47% 11%)",
 
-        primary: 'hsl(var(--primary))',
-        'primary-foreground': 'hsl(var(--primary-foreground))',
+        secondary: "hsl(199 89% 48%)",
+        "secondary-foreground": "hsl(210 40% 98%)",
 
-        secondary: 'hsl(var(--secondary))',
-        'secondary-foreground': 'hsl(var(--secondary-foreground))',
+        accent: "hsl(280 80% 60%)",
+        "accent-foreground": "hsl(210 40% 98%)",
 
-        accent: 'hsl(var(--accent))',
-        'accent-foreground': 'hsl(var(--accent-foreground))',
+        muted: "hsl(222 47% 20%)",
+        "muted-foreground": "hsl(215 20% 65%)",
 
-        border: 'hsl(var(--border))',
+        border: "hsl(222 47% 25%)",
       },
       borderRadius: {
-        xl: '1rem',
-        '2xl': '1.5rem',
+        lg: "1rem",
+        xl: "1.25rem",
+        "2xl": "1.5rem",
       },
     },
   },
   plugins: [],
-};
+}
+
