@@ -1,80 +1,207 @@
-<div className="bg-red-500 text-white p-10 text-3xl">
-  TAILWIND WORKS
-</div>
-export default function App() {
+import React from 'react';
+import './index.css';
+
+function App() {
+  const handleSignUp = () => {
+    alert('Thank you for your interest!');
+  };
+
   return (
-    <main className="min-h-screen bg-gradient-to-br from-indigo-50 via-sky-50 to-emerald-50 text-slate-900">
-
-      {/* HERO */}
-      <section className="pt-16 pb-10">
-        <div className="max-w-4xl mx-auto text-center px-6">
-          <p className="uppercase tracking-widest text-sm text-indigo-500 mb-3">
-            Курс английского языка
-          </p>
-
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-            Английский для путешествий
-          </h1>
-
-          <p className="text-lg text-slate-600 mb-6">
-            От заказа кофе до поиска чемодана — уверенный разговорный английский
-            для реальных поездок.
-          </p>
-
-          <button className="inline-flex items-center gap-2 px-8 py-3 rounded-xl
-            bg-gradient-to-r from-indigo-600 to-sky-500
-            text-white text-lg font-semibold
-            shadow-lg hover:shadow-2xl hover:-translate-y-0.5 transition">
-            ✈️ Записаться на курс
-          </button>
+    <div style={styles.container}>
+      <header style={styles.header}>
+        <div style={styles.headerContent}>
+          <div style={styles.logo}>
+            <span style={styles.logoIcon}>🌍</span>
+            <h1 style={styles.logoText}>TravelEnglish</h1>
+          </div>
+          <div style={styles.tagline}>Course for kids 4-8 grade</div>
         </div>
-      </section>
+      </header>
 
-      {/* ДЛЯ КОГО */}
-      <section className="pb-14">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-center mb-8">
-            Для кого этот курс
-          </h2>
+      <main style={styles.main}>
+        <div style={styles.hero}>
+          <div style={styles.badge}>Enrollment Open!</div>
+          <h1 style={styles.title}>English for Travel</h1>
+          <p style={styles.subtitle}>
+            Dream of your child speaking freely abroad? This course teaches real conversational English for travel.
+          </p>
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div style={styles.grid}>
+          <div style={styles.card}>
+            <h2 style={styles.cardTitle}>For Whom</h2>
+            <ul style={styles.list}>
+              <li style={styles.listItem}>
+                <span>Group 1:</span>
+                <span style={styles.highlight}>4-5 grade</span>
+              </li>
+              <li style={styles.listItem}>
+                <span>Group 2:</span>
+                <span style={styles.highlight}>6-8 grade</span>
+              </li>
+            </ul>
+          </div>
 
-            {/* Карточка 1 */}
-            <div className="rounded-2xl p-6
-              bg-gradient-to-br from-indigo-500 to-indigo-700
-              text-white shadow-xl
-              hover:-translate-y-1 hover:shadow-2xl transition">
-              <h3 className="text-xl font-semibold mb-1 flex items-center gap-2">
-                🧒 Первая группа
-              </h3>
-              <p className="text-indigo-100 mb-3">4–5 класс</p>
-              <ul className="space-y-2">
-                <li>• Базовые слова и фразы</li>
-                <li>• Игровой формат</li>
-                <li>• Разговор без страха</li>
-              </ul>
-            </div>
-
-            {/* Карточка 2 */}
-            <div className="rounded-2xl p-6
-              bg-gradient-to-br from-emerald-500 to-teal-600
-              text-white shadow-xl
-              hover:-translate-y-1 hover:shadow-2xl transition">
-              <h3 className="text-xl font-semibold mb-1 flex items-center gap-2">
-                🧑 Вторая группа
-              </h3>
-              <p className="text-emerald-100 mb-3">6–8 класс</p>
-              <ul className="space-y-2">
-                <li>• Живые диалоги</li>
-                <li>• Ситуации из путешествий</li>
-                <li>• Уверенная речь</li>
-              </ul>
-            </div>
-
+          <div style={styles.card}>
+            <h2 style={styles.cardTitle}>Program</h2>
+            <ul style={styles.list}>
+              <li style={styles.simpleItem}>✓ Airport without stress</li>
+              <li style={styles.simpleItem}>✓ Hotel check-in</li>
+              <li style={styles.simpleItem}>✓ Cafes & restaurants</li>
+              <li style={styles.simpleItem}>✓ Navigation</li>
+            </ul>
           </div>
         </div>
-      </section>
 
-    </main>
-  )
+        <div style={styles.cta}>
+          <h2 style={styles.ctaTitle}>Ready for travel without language barriers?</h2>
+          <button onClick={handleSignUp} style={styles.button}>
+            Sign Up for Course
+          </button>
+        </div>
+      </main>
+
+      <footer style={styles.footer}>
+        <p>© 2024 TravelEnglish. Course for kids 4-8 grade</p>
+      </footer>
+    </div>
+  );
 }
+
+const styles = {
+  container: {
+    minHeight: '100vh',
+    backgroundColor: '#0f172a',
+    color: '#f8fafc',
+    fontFamily: 'Arial, sans-serif',
+  },
+  header: {
+    backgroundColor: '#1e293b',
+    padding: '24px 0',
+    borderBottom: '1px solid #334155',
+  },
+  headerContent: {
+    maxWidth: '1200px',
+    margin: '0 auto',
+    padding: '0 24px',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  logo: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+  },
+  logoIcon: {
+    fontSize: '32px',
+  },
+  logoText: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+    background: 'linear-gradient(135deg, #3b82f6, #06b6d4)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+  },
+  tagline: {
+    color: '#06b6d4',
+    fontWeight: '500',
+  },
+  main: {
+    maxWidth: '1200px',
+    margin: '0 auto',
+    padding: '48px 24px',
+  },
+  hero: {
+    textAlign: 'center',
+    marginBottom: '64px',
+  },
+  badge: {
+    display: 'inline-block',
+    backgroundColor: 'rgba(6, 182, 212, 0.1)',
+    color: '#06b6d4',
+    padding: '8px 20px',
+    borderRadius: '20px',
+    marginBottom: '24px',
+    border: '1px solid rgba(6, 182, 212, 0.3)',
+  },
+  title: {
+    fontSize: '48px',
+    fontWeight: 'bold',
+    marginBottom: '24px',
+    background: 'linear-gradient(135deg, #f59e0b, #06b6d4, #3b82f6)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+  },
+  subtitle: {
+    fontSize: '20px',
+    color: '#cbd5e1',
+    maxWidth: '600px',
+    margin: '0 auto',
+    lineHeight: '1.6',
+  },
+  grid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+    gap: '32px',
+    marginBottom: '64px',
+  },
+  card: {
+    backgroundColor: '#1e293b',
+    borderRadius: '16px',
+    padding: '32px',
+    border: '1px solid #334155',
+  },
+  cardTitle: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+    marginBottom: '24px',
+    color: '#fbbf24',
+  },
+  list: {
+    listStyle: 'none',
+  },
+  listItem: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: '12px 0',
+    borderBottom: '1px solid #334155',
+  },
+  simpleItem: {
+    padding: '8px 0',
+    color: '#cbd5e1',
+  },
+  highlight: {
+    color: '#06b6d4',
+    fontWeight: '500',
+  },
+  cta: {
+    textAlign: 'center',
+    padding: '64px 0',
+  },
+  ctaTitle: {
+    fontSize: '36px',
+    fontWeight: 'bold',
+    marginBottom: '32px',
+  },
+  button: {
+    background: 'linear-gradient(135deg, #3b82f6, #06b6d4)',
+    color: 'white',
+    border: 'none',
+    padding: '20px 48px',
+    fontSize: '20px',
+    fontWeight: 'bold',
+    borderRadius: '50px',
+    cursor: 'pointer',
+    transition: 'transform 0.3s',
+  },
+  footer: {
+    backgroundColor: '#1e293b',
+    padding: '32px',
+    textAlign: 'center',
+    color: '#94a3b8',
+    borderTop: '1px solid #334155',
+  },
+};
+
+export default App;
