@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Анонс курса английского языка</title>
-    <script type="module" crossorigin src="/Figmatravel/assets/index-E5kU8nBw.js"></script>
-    <link rel="stylesheet" crossorigin href="/Figmatravel/assets/index--ONJcFLm.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Английский для путешествий</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
+            font-family: Arial, sans-serif;
+            color: #0f172a;
+        }
+        main {
+            padding-top: 64px;
+            padding-bottom: 128px;
+        }
+        .container {
+            max-width: 56rem;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 24px;
+        }
+        .subtitle {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.875rem;
+            color: #64748b;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: #0f172a;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.25rem; }
+        }
+        .description {
+            font-size: 1.125rem;
+            color: #475569;
+            margin-bottom: 2rem;
+            max-width: 42rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            border-radius: 12px;
+            background: linear-gradient(to right, #2563eb, #4f46e5);
+            color: white;
+            font-size: 1.125rem;
+            font-weight: 600;
+            border: none;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+        button:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <p class="subtitle">название курса</p>
+            <h1>Английский для ПУТЕШЕСТВИЙ</h1>
+            <p class="description">
+                Стартовать до поездки в чемодана – уверенный разговорный английский
+                для реальных ситуаций.
+            </p>
+            <button>Записаться на курс</button>
+        </div>
+    </main>
+</body>
 </html>
-
-  
