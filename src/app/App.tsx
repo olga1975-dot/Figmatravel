@@ -1,3 +1,6 @@
+<div className="bg-red-500 text-white p-10 text-3xl">
+  TAILWIND WORKS
+</div>
 export default function App() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-indigo-50 via-sky-50 to-emerald-50 text-slate-900">
